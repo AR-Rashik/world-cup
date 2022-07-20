@@ -1,0 +1,496 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/*====== Global Styles ===== */
+*  {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: 'poppins', sans-serif;
+}
+
+.container {
+  max-width: 1321px;
+  margin: auto;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+ }
+
+ li {
+  list-style: none;
+ }
+
+/* ===== banner section ===== */
+.banner-section {
+  background-color: #161616;
+  margin: 40px auto 130px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 33px 80px 0px 106px;
+  color: #ffffff;
+  border-radius: 30px;
+}
+
+.banner-info {
+  width: 50%;
+}
+
+.banner-image {
+  width: 50%;
+}
+
+.banner-title {
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 80px;
+}
+
+.banner-details {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+  margin: 20px 0px  30px;
+}
+
+.banner-btn {
+  color: #ffffff;
+  background-color: #DD0000;
+  padding: 16px 26px;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.banner-btn:hover i{
+  transform: translateX(15px);
+  transition-duration: .8s;
+}
+
+
+.banner-image img {
+  width: 581px;
+  vertical-align: bottom;
+}
+
+.left-in {
+  -webkit-animation-name: left-in;
+  animation-name: left-in;
+}
+
+.right-in {
+  -webkit-animation-name: right-in;
+  animation-name: right-in;
+}
+
+.left-in,
+.right-in {
+  -webkit-animation-duration: 0.8s;
+  animation-duration: 0.8s;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-play-state: running;
+  animation-play-state: running;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+
+@-webkit-keyframes left-in {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes left-in {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@-webkit-keyframes right-in {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes right-in {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+
+
+/* ===== Menu Section ===== */
+.contents {
+  display: grid;
+  grid-template-columns: 312px 1fr;
+  grid-column-gap: 24px;
+}
+.side-menu  {
+  width: 312px;
+  height: 312px;
+  background-color: #161616;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  justify-content: space-between;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.side-menu button {
+  height: 64px;
+  border-radius: 10px;
+  color: #161616;
+  background-color: #ffffff;
+  border: none;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 600;
+}
+
+.side-menu a {
+  color: #161616;
+}
+
+.active a {
+  color: #ffffff;
+}
+
+.side-menu .active {
+  background-color: #DD0000 !important;
+  color: #ffffff !important;
+}
+
+.main-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 24px;
+}
+
+.blog .blog-image img {
+  width: 100%;
+  vertical-align: bottom;
+}
+
+.blog-content {
+  padding: 20px;
+  border: 1px solid #e8e8e8 ;
+  border-top: none;
+  border-radius: 0px 0px 10px 10px;
+  box-sizing: border-box;
+}
+
+.blog-content button {
+  width: 100px;
+  height: 32px;
+  border: 1px solid #161616;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #161616;
+  font-weight: 500;
+  margin-bottom: 15px;
+  background-color: #ffffff;
+}
+
+.blog-content button:hover {
+  color: #DD0000;
+  border: 1px solid #DD0000;
+}
+
+.blog-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #161616;
+}
+
+.info-box {
+  display: flex;
+  margin-top: 20px;
+  font-weight: 400;
+  font-size: 16px;
+  color: rgba(22, 22, 22, 0.7);
+}
+
+.info-box i {
+  margin-right: 5px;
+}
+
+.time {
+  margin-right: 30px;
+}
+
+.secret-btn {
+  display: none;
+}
+
+/* ===== Upcoming Match Section ===== */
+.matches {
+  height: 300px;
+  border: 1px solid rgb(226, 225, 225);
+}
+
+.flags {
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+} 
+
+.flags img {
+  border-radius: 0;
+}
+
+.football-match {
+  text-align: center;
+  margin: 30px;
+}
+
+.match-time {
+  text-align: center;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #4D4D4D;
+}
+
+
+/* ===== Footer Section ===== */
+footer {
+  background-color: #161616;
+  color: #ffffff;
+  font-weight: 400;
+  text-align: center;
+  padding: 130px 0px;
+  margin-top: 130px;
+}
+
+.footer-goal {
+  font-weight: 600;
+  font-size: 40px;
+  color: #FFFFFF;
+}
+
+footer hr {
+  width: 100%;
+  opacity: 0.1;
+  margin: 50px 0px;
+}
+
+footer ul {
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+footer  ul li {
+  cursor: pointer;
+  margin: 15px;
+}
+
+.icons {
+  font-size: 30px;
+  color: #FFFFFF;
+}
+
+.fa-instagram:hover {
+  color: #e1306c;
+}
+
+.fa-linkedin:hover {
+  color: #0072b1;
+}
+
+.fa-facebook:hover {
+  color: #3b5998 ;
+}
+
+.fa-whatsapp:hover {
+  color: #25D366;
+}
+
+/* ====== Responsive Design ====== */
+
+/* ====== Extra Large Screen ===== */
+@media screen and (max-width: 1400px) {
+  .container {
+      width: 90%
+  }
+  .banner-image img {
+      width: 100%;
+  }
+
+  .banner-title {
+      font-size: 40px;
+      line-height: 45px;
+  }
+  
+}
+
+/* ===== Large Screen ===== */
+
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+  .banner-section {
+      padding: 33px 30px 0px 55px;
+  }
+  .banner-title {
+      font-size: 36px;
+      line-height: 38px;
+  }
+  .banner-details {
+      font-size: 14px;
+      line-height: 23px;
+      margin: 10px 0px 8px;
+  }
+  .banner-btn {
+      font-size: 14px;
+      padding: 10px 19px;
+  }
+}
+
+/* ====== Tablet Screen ===== */
+
+@media screen and (max-width: 768px) and (min-width: 481px) {
+  .banner-section {
+      padding: 33px 30px 0px 55px;
+      margin-bottom: 40px;
+  }
+  .banner-title {
+      font-size: 36px;
+      line-height: 38px;
+  }
+  .banner-details {
+      font-size: 14px;
+      line-height: 23px;
+      margin: 10px 0px 8px;
+  }
+  .banner-btn {
+      font-size: 14px;
+      padding: 10px 19px;
+  }
+
+  /* ====== Menu & Blog Section ====== */
+  .contents {
+      display: flex;
+      flex-direction: column;
+  }
+  .side-menu  {
+      width: 100%;
+      height: auto;
+      background-color: #ffffff;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      padding: 30px 0px;
+      border-radius: 10px;
+      grid-column-gap: 22px;
+  }
+
+  .side-menu button {
+      border: 1px solid #e8e8e8;
+  }
+
+  .main-content {
+      grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* ===== Secret Button for Tablet ===== */
+ .secret-btn {
+    display: block;
+    background-color: #DD0000;
+    width: 147px;
+    height: 47px;
+    padding: 12px 30px;
+    border-radius: 5px;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+    margin: 2rem auto;
+  }
+
+  footer {
+      margin-top: 70px;
+      padding: 70px 0px;
+  }
+}
+
+/* ===== Mobile Screen ===== */
+
+@media screen and (max-width: 480px) {
+  .banner-section {
+      display: block;
+      padding: 40px;
+      padding-bottom: 0px;
+      text-align: center;
+      margin-bottom: 10px;
+  }
+  .banner-info {
+      width: 100%;
+  }
+  .banner-image {
+      width: 100%;
+      display: block;
+      margin: 20px;
+      margin-bottom: 0px;
+  }
+  .banner-title {
+      font-size: 22px;
+      line-height: 25px;
+  }
+
+  /* ======= Menu & Blog Section */
+  .contents {
+      display: flex;
+      flex-direction: column;
+  }
+  
+  .side-menu  {
+      width: 100%;
+      height: auto;
+      background-color: #ffffff;
+      display: flex;
+      padding: 30px 0px;
+      border-radius: 10px;
+      grid-column-gap: 22px;
+  }
+
+  .side-menu button {
+      border: 1px solid #e8e8e8;
+      margin-bottom: 20px;
+  }
+
+  .main-content {
+      grid-template-columns: 1fr;
+  }
+
+  footer {
+      margin-top: 70px;
+      padding: 70px 0px;
+  }
+
+}
