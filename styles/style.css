@@ -30,7 +30,7 @@ a {
 
 /* ===== banner section ===== */
 .banner-section {
-  background-color: #161616;
+  background-color: #14213d;
   margin: 40px auto 130px;
   display: flex;
   justify-content: center;
@@ -63,7 +63,7 @@ a {
 
 .banner-btn {
   color: #ffffff;
-  background-color: #DD0000;
+  background-color: #fca311;
   padding: 16px 26px;
   border: none;
   border-radius: 5px;
@@ -148,7 +148,7 @@ a {
 .side-menu  {
   width: 312px;
   height: 312px;
-  background-color: #161616;
+  background-color: #14213d;
   display: flex;
   flex-direction: column;
   padding: 30px;
@@ -177,7 +177,7 @@ a {
 }
 
 .side-menu .active {
-  background-color: #DD0000 !important;
+  background-color: #fca311!important;
   color: #ffffff !important;
 }
 
@@ -203,7 +203,7 @@ a {
 .blog-content button {
   width: 100px;
   height: 32px;
-  border: 1px solid #161616;
+  border: 1px solid #14213d;
   border-radius: 5px;
   font-size: 16px;
   color: #161616;
@@ -213,8 +213,8 @@ a {
 }
 
 .blog-content button:hover {
-  color: #DD0000;
-  border: 1px solid #DD0000;
+  color: #fca311;
+  border: 1px solid #fca311;
 }
 
 .blog-title {
@@ -277,7 +277,7 @@ a {
 
 /* ===== Footer Section ===== */
 footer {
-  background-color: #161616;
+  background-color: #14213d;
   color: #ffffff;
   font-weight: 400;
   text-align: center;
@@ -421,7 +421,7 @@ footer  ul li {
   /* ===== Secret Button for Tablet ===== */
  .secret-btn {
     display: block;
-    background-color: #DD0000;
+    background-color: #fca311;
     width: 147px;
     height: 47px;
     padding: 12px 30px;
